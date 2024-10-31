@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPTSESSION</title>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+   <center>
+    <h1>
+      <p>COLLEGE OF INFORMATION AND COMPUTING SCIENCES </p>
+    </h1>
+   
+    <h1 id ="result">
+
+    </h1>
+
+    <h2 class ="output"> </h2>
+    <h3 id = "outputName"></h3>
+
+    <button type="button" onclick="alert(ComputeTwoNumbers(12,3));">Click Me</button>
+
+    <button type="button" onclick="confirmSubmission();">Submit</button>
+  
+
+  <br><br>
+  <h3 id = "compute"></h3>
+
+    <script src ="custom.js"></script>
+
+    <script type = "text/javascript"> 
+    document.write("HELLO WORLD");
+    console.log("Hello World");
+
+    let name = "CEJAY PELOBELLO";
+    var age = 20;
+    const remarks = "STUDENT";
+
+    document.write("<br>");
+    document.write(name +  " " + remarks + " " + age + " ");
+    document.getElementById("result").innerHTML = name + " " + remarks + " " + age + " ";
+    document.getElementsByClassName("output")[0].innerHTML  = name + " " + remarks +  " " + age +" ";
+
+    document.getElementById("outputName").innerHTML = displayName("CEJAY PELOBELLO");
+
+    document.write("<br>");
+    document.write(displayName("CEJAY PELOBELLO"));
+    document.write("<br>");
+    document.write(ComputeTwoNumbers(12,3));
+    console.log(ComputeTwoNumbers(12,3));
+
+    document.getElementById("compute").innerHTML = ComputeTwoNumbers(12,3);
+
+
+    checkGrade();
+    ComputeTwoNumbers();
+
+  </script>
+    </center>
+</body>
+</html>
